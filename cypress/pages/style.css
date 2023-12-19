@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sx-vue-calendar-wrapper {
+  margin: 1rem auto 0;
+  width: 90%;
+  height: 800px;
+  max-height: 90vh;
+}

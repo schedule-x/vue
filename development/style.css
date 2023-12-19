@@ -1,0 +1,26 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  margin: 0 auto;
+  width: 95%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sx-vue-calendar-wrapper {
+  width: 100%;
+  height: 800px;
+  max-height: 90vh;
+}

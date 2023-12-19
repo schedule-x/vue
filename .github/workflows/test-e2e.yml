@@ -1,0 +1,23 @@
+name: End-to-end tests
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'cypress/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'tsconfig.json'
+
+jobs:
+  chrome:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies ⬇️
+        run: npm install
+      - name: Build lib 🔨
+        run: npm run build
+      - uses: cypress-io/github-action@v4
+        with:
+          browser: chrome
+          start: npm run dev

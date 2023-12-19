@@ -20,6 +20,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": [
+    "development/**/*.ts",
+    "development/**/*.tsx",
+    "development/**/*.vue",
+    "cypress/**/*.cy.ts",
+    "cypress"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

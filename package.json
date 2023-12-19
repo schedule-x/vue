@@ -7,18 +7,24 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "lint": "eslint --ext .ts,.vue src",
+    "lint": "eslint . --ext ts,vue --report-unused-disable-directives --max-warnings 5",
+    "lint:fix": "eslint . --fix --ext ts,vue --report-unused-disable-directives --max-warnings 5",
     "format": "prettier --write ."
   },
   "dependencies": {
-    "@schedule-x/calendar": "^0.3.0-alpha.0",
-    "vue": "^3.3.11"
+    "@schedule-x/calendar": "^0.3.0"
+  },
+  "peerDependencies": {
+    "vue": "^3"
   },
   "devDependencies": {
-    "@schedule-x/e2e-testing": "^0.3.0-alpha.0",
-    "@schedule-x/eslint-config": "^0.2.0",
-    "@schedule-x/prettier-config": "^0.2.0",
-    "@schedule-x/theme-default": "^0.2.0",
+    "@fontsource/open-sans": "^5.0.20",
+    "@schedule-x/e2e-testing": "^0.3.0",
+    "@schedule-x/eslint-config": "^0.3.0",
+    "@schedule-x/prettier-config": "^0.3.0",
+    "@schedule-x/theme-default": "^0.3.0",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
     "@vitejs/plugin-vue": "^4.5.2",
     "cypress": "^13.6.1",
     "eslint": "^8.56.0",
