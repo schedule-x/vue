@@ -1,5 +1,5 @@
 {
-  "name": "vue-connector",
+  "name": "@schedule-x/vue",
   "private": true,
   "version": "0.3.0",
   "main": "./dist/schedule-x-vue.umd.js",
