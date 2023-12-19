@@ -2,14 +2,20 @@
   "name": "vue-connector",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "main": "./dist/schedule-x-vue.umd.js",
+  "module": "./dist/schedule-x-vue.mjs",
+  "types": "./dist/types/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,vue --report-unused-disable-directives --max-warnings 5",
     "lint:fix": "eslint . --fix --ext ts,vue --report-unused-disable-directives --max-warnings 5",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "cypress run"
   },
   "dependencies": {
     "@schedule-x/calendar": "^0.3.0"
@@ -19,6 +25,7 @@
   },
   "devDependencies": {
     "@fontsource/open-sans": "^5.0.20",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@schedule-x/e2e-testing": "^0.3.0",
     "@schedule-x/eslint-config": "^0.3.0",
     "@schedule-x/prettier-config": "^0.3.0",

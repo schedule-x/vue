@@ -18,7 +18,7 @@ export default defineComponent({
   },
 
   mounted() {
-    this.calendarApp.render(document.getElementById(this.elId))
+    this.calendarApp.render(document.getElementById(this.elId) as HTMLElement)
   },
 
   render() {
