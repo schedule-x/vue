@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Calendar from '../src/calendar.ts'
+import Calendar from '../src/schedule-x-calendar.ts'
 import {
   createCalendar,
   viewDay,
@@ -46,9 +46,13 @@ const addEvent = () => {
   <div class="app">
     <Calendar :calendar-app="sxCal" />
 
-    <button @click="addEvent">add event</button>
+    <button @click="addEvent">
+      add event
+    </button>
 
-    <button @click="incrementCounter">increment counter</button>
+    <button @click="incrementCounter">
+      increment counter
+    </button>
 
     <div>{{ counter }}</div>
   </div>

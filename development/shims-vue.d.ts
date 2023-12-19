@@ -1,1 +1,4 @@
-declare module '*.vue' // eslint-disable-line
+declare module "*.vue" {
+  import Vue from 'vue';
+  export default Vue;
+}

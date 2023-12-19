@@ -1,29 +1,27 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ES2019",
     "useDefineForClassFields": true,
-    "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
     "skipLibCheck": true,
 
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "preserve",
 
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": true
   },
-  "include": [
-    "development/**/*.ts",
-    "development/**/*.tsx",
-    "development/**/*.vue",
-    "cypress/**/*.cy.ts",
-    "cypress"
-  ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "types": ["vite/client", "node"]
 }

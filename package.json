@@ -2,7 +2,9 @@
   "name": "vue-connector",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "main": "./dist/schedule-x-vue.umd.js",
+  "module": "./dist/schedule-x-vue.mjs",
+  "types": "./dist/types/index.d.ts",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
@@ -19,6 +21,7 @@
   },
   "devDependencies": {
     "@fontsource/open-sans": "^5.0.20",
+    "@rollup/plugin-typescript": "^11.1.5",
     "@schedule-x/e2e-testing": "^0.3.0",
     "@schedule-x/eslint-config": "^0.3.0",
     "@schedule-x/prettier-config": "^0.3.0",
