@@ -1,7 +1,7 @@
 {
   "name": "vue-connector",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.3.0",
   "main": "./dist/schedule-x-vue.umd.js",
   "module": "./dist/schedule-x-vue.mjs",
   "types": "./dist/types/index.d.ts",
@@ -15,7 +15,8 @@
     "lint": "eslint . --ext ts,vue --report-unused-disable-directives --max-warnings 5",
     "lint:fix": "eslint . --fix --ext ts,vue --report-unused-disable-directives --max-warnings 5",
     "format": "prettier --write .",
-    "test": "cypress run"
+    "test": "cypress run",
+    "build:publish": "npm run build && npm publish"
   },
   "dependencies": {
     "@schedule-x/calendar": "^0.3.0"
