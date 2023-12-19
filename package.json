@@ -5,13 +5,17 @@
   "main": "./dist/schedule-x-vue.umd.js",
   "module": "./dist/schedule-x-vue.mjs",
   "types": "./dist/types/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,vue --report-unused-disable-directives --max-warnings 5",
     "lint:fix": "eslint . --fix --ext ts,vue --report-unused-disable-directives --max-warnings 5",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "cypress run"
   },
   "dependencies": {
     "@schedule-x/calendar": "^0.3.0"
