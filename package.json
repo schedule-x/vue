@@ -20,11 +20,9 @@
     "test": "cypress run",
     "build:publish": "npm run build && npm publish"
   },
-  "dependencies": {
-    "@schedule-x/calendar": "^0.3.0"
-  },
   "peerDependencies": {
-    "vue": "^3"
+    "vue": "^3",
+    "@schedule-x/calendar": "^0.4.0"
   },
   "devDependencies": {
     "@fontsource/open-sans": "^5.0.20",

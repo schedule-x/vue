@@ -17,10 +17,8 @@ const calendarApp = createCalendar({
     {
       id: 1,
       title: 'Event 1',
-      time: {
-        start: '2023-12-18',
-        end: '2023-12-18',
-      },
+      start: '2023-12-18',
+      end: '2023-12-18',
     },
   ],
 })
@@ -31,10 +29,8 @@ const addEvent = () => {
   calendarApp.events.add({
     id: newEventId,
     title: 'Event 2',
-    time: {
-      start: '2023-12-19',
-      end: '2023-12-19',
-    },
+    start: '2023-12-19',
+    end: '2023-12-19',
   })
 }
 
@@ -42,10 +38,8 @@ const updateEvent = () => {
   calendarApp.events.update({
     id: newEventId,
     title: 'Event 2 updated',
-    time: {
-      start: '2023-12-19',
-      end: '2023-12-19',
-    },
+    start: '2023-12-19',
+    end: '2023-12-19',
   })
 }
 

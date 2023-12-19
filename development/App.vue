@@ -22,10 +22,8 @@ const sxCal = createCalendar({
     {
       id: 1,
       title: 'Event 1',
-      time: {
-        start: '2023-12-18',
-        end: '2023-12-18',
-      },
+      start: '2023-12-18',
+      end: '2023-12-18',
     },
   ],
 })
@@ -34,10 +32,8 @@ const addEvent = () => {
   sxCal.events.add({
     id: 2,
     title: 'Event 2',
-    time: {
-      start: '2023-12-19',
-      end: '2023-12-19',
-    },
+    start: '2023-12-19',
+    end: '2023-12-19',
   })
 }
 </script>
