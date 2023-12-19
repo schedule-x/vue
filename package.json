@@ -1,6 +1,5 @@
 {
   "name": "@schedule-x/vue",
-  "private": true,
   "version": "0.3.0",
   "main": "./dist/schedule-x-vue.umd.js",
   "module": "./dist/schedule-x-vue.mjs",
@@ -8,6 +7,9 @@
   "publishConfig": {
     "access": "public"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
