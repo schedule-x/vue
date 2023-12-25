@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { ScheduleXCalendar } from '../../'
+import { ScheduleXCalendar } from '../../..'
 import {
   createCalendar,
   viewDay,
@@ -12,6 +12,7 @@ import {
 import '@schedule-x/theme-default/dist/index.css'
 
 const calendarApp = createCalendar({
+  selectedDate: '2023-12-18',
   views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
   events: [
     {
@@ -52,15 +53,11 @@ const removeEvent = () => {
   <div class="app">
     <ScheduleXCalendar :calendar-app="calendarApp" />
 
-    <button @click="addEvent">
-      add event
-    </button>
-    <button @click="updateEvent">
-      update event
-    </button>
-    <button @click="removeEvent">
-      remove event
-    </button>
+    <button @click="addEvent">add event</button>
+
+    <button @click="updateEvent">update event</button>
+
+    <button @click="removeEvent">remove event</button>
   </div>
 </template>
 
