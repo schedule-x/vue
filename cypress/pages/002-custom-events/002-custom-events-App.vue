@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { ScheduleXCalendar } from '../../..'
 import { createCalendar, viewDay, viewWeek } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
