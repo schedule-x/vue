@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { ScheduleXCalendar } from '../../../dist/types'
+import { ScheduleXCalendar } from '../../../dist/schedule-x-vue.mjs'
 import {
   createCalendar,
   viewDay,
@@ -53,7 +53,9 @@ const removeEvent = () => {
     <ScheduleXCalendar :calendar-app="calendarApp" />
 
     <button @click="addEvent">add event</button>
+
     <button @click="updateEvent">update event</button>
+
     <button @click="removeEvent">remove event</button>
   </div>
 </template>
