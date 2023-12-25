@@ -9,7 +9,7 @@
 <script lang="ts" setup>
 import { PropType } from 'vue'
 
-const props = defineProps({
+defineProps({
   calendarEvent: {
     type: Object as PropType<{ title: string; id: number | string }>,
     required: true,
