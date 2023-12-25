@@ -12,6 +12,7 @@ import {
 import '@schedule-x/theme-default/dist/index.css'
 
 const calendarApp = createCalendar({
+  selectedDate: '2023-12-18',
   views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
   events: [
     {
