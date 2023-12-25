@@ -4,11 +4,11 @@ import { Component, h } from 'vue'
 export const createCustomComponent =
   (
     setCustomComponent: (component: CustomComponentMeta) => void,
-    customTimeGridEventComponent: Component
+    customComponent: Component
   ) =>
   (wrapperElement: HTMLElement, props: Record<string, unknown>) => {
     const componentMeta: CustomComponentMeta = {
-      Component: h(customTimeGridEventComponent, props),
+      Component: h(customComponent, props),
       wrapperElement,
     }
     setCustomComponent(componentMeta)
