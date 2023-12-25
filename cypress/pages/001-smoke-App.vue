@@ -52,15 +52,9 @@ const removeEvent = () => {
   <div class="app">
     <ScheduleXCalendar :calendar-app="calendarApp" />
 
-    <button @click="addEvent">
-      add event
-    </button>
-    <button @click="updateEvent">
-      update event
-    </button>
-    <button @click="removeEvent">
-      remove event
-    </button>
+    <button @click="addEvent">add event</button>
+    <button @click="updateEvent">update event</button>
+    <button @click="removeEvent">remove event</button>
   </div>
 </template>
 
