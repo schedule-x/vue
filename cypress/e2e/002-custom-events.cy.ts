@@ -8,11 +8,12 @@ describe('Custom events test', () => {
   })
 
   it('should render custom events', () => {
-    // Should contain events with titles Event 1, Event 2, Event 3 and Event 4
     calendarHeader.openViewByLabel('Week')
     cy.contains('Event 1').should('exist')
     cy.contains('Event 2').should('exist')
     cy.contains('Event 3').should('exist')
     cy.contains('Event 4').should('exist')
+    cy.contains('Title: Event 5').should('exist')
+    cy.contains('Id: 5').should('exist')
   })
 })

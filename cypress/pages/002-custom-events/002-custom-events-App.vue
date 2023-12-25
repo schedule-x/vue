@@ -4,6 +4,8 @@
 import { ScheduleXCalendar } from '../../..'
 import { createCalendar, viewDay, viewWeek } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
+import CustomDateGridEvent from "../../../development/components/CustomDateGridEvent.vue";
+import CustomTimeGridEvent from "../../../development/components/CustomTimeGridEvent.vue";
 
 const calendarApp = createCalendar({
   views: [viewWeek, viewDay],
@@ -33,13 +35,28 @@ const calendarApp = createCalendar({
       start: '2023-12-22',
       end: '2023-12-28',
     },
+    {
+      id: 5,
+      title: 'Event 5',
+      start: '2023-12-18 04:15',
+      end: '2023-12-18 05:15',
+    },
   ],
 })
+
+const customComponents = {
+  dateGridEvent: CustomDateGridEvent,
+  timeGridEvent: CustomTimeGridEvent,
+}
+
 </script>
 
 <template>
   <div class="app">
-    <ScheduleXCalendar :calendar-app="calendarApp" />
+    <ScheduleXCalendar
+        :calendar-app="calendarApp"
+        :custom-components="customComponents"
+    />
   </div>
 </template>
 
