@@ -5,7 +5,7 @@ export type CustomComponents = {
   dateGridEvent?: Component
 }
 export type CustomComponentMeta = {
-  Component: Component<unknown, unknown>
+  Component: Component
   wrapperElement: HTMLElement
 }
 export type CustomComponentsMeta = CustomComponentMeta[]
