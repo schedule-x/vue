@@ -1,7 +1,5 @@
 <script setup lang="ts">
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import { ScheduleXCalendar } from '../../../dist/schedule-x-vue.mjs'
+import { ScheduleXCalendar } from '../../..'
 import {
   createCalendar,
   viewDay,
