@@ -25,7 +25,6 @@ export default defineComponent({
     return {
       elId: 'sx' + Math.random().toString(36).substr(2, 9),
       customComponentsMeta: [] as CustomComponentsMeta,
-      renderKey: 0,
     }
   },
 
@@ -74,7 +73,6 @@ export default defineComponent({
       {
         id: this.elId,
         class: 'sx-vue-calendar-wrapper',
-        key: this.renderKey,
       },
       h(Fragment, {}, customVNodes)
     )
