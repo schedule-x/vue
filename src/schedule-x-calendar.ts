@@ -17,6 +17,7 @@ export default defineComponent({
     },
     customComponents: {
       type: Object as PropType<CustomComponents>,
+      default: () => ({}),
     },
   },
 
@@ -26,6 +27,18 @@ export default defineComponent({
       customComponentsMeta: [] as CustomComponentsMeta,
       renderKey: 0,
     }
+  },
+
+  mounted() {
+    for (const [componentName, component] of Object.entries(
+      this.customComponents || {}
+    )) {
+      this.calendarApp._setCustomComponentFn(
+        componentName as 'timeGridEvent' | 'dateGridEvent',
+        createCustomComponent(this.setCustomComponentMeta, component)
+      )
+    }
+    this.calendarApp.render(document.getElementById(this.elId) as HTMLElement)
   },
 
   methods: {
@@ -47,21 +60,11 @@ export default defineComponent({
     },
   },
 
-  mounted() {
-    for (const [componentName, component] of Object.entries(
-      this.customComponents
-    )) {
-      this.calendarApp._setCustomComponentFn(
-        componentName,
-        createCustomComponent(this.setCustomComponentMeta, component)
-      )
-    }
-    this.calendarApp.render(document.getElementById(this.elId) as HTMLElement)
-  },
-
   render() {
     const customVNodes = this.customComponentsMeta.map(
       ({ Component, wrapperElement }) => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         return h(Teleport, { to: wrapperElement }, Component)
       }
     )

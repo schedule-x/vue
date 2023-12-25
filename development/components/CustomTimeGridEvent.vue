@@ -1,6 +1,6 @@
 <template>
-  <div class="lol-component">
-    Hello from Vue
+  <div class="custom-time-grid-event">
+    <input type="checkbox" />
     <div>Id: {{ calendarEvent.id }}</div>
     <div>Title: {{ calendarEvent.title }}</div>
   </div>
@@ -15,12 +15,10 @@ const props = defineProps({
     required: true,
   },
 })
-
-console.log(props.calendarEvent)
 </script>
 
 <style>
-.lol-component {
+.custom-time-grid-event {
   border: 2px solid black;
   border-radius: 4px;
   background-color: #fff;

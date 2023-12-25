@@ -1,7 +1,7 @@
 <script setup lang="ts">
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { ScheduleXCalendar } from '../../'
+import { ScheduleXCalendar } from '../../../dist/types'
 import {
   createCalendar,
   viewDay,

@@ -6,7 +6,7 @@ describe('Smoke Test', () => {
   const weekView = createWeekViewPageObject()
 
   beforeEach(() => {
-    cy.visit('/cypress/pages/001-smoke.html')
+    cy.visit('/cypress/pages/001-smoke/001-smoke.html')
   })
 
   it('should navigate between views', () => {
