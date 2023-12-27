@@ -50,7 +50,9 @@ const customComponents: CustomComponents = {
       :custom-components="customComponents"
     >
       <template #timeGridEvent="{ calendarEvent }">
-        <div :style="{ backgroundColor: 'green', color: '#fff', height: '100%' }">
+        <div
+          :style="{ backgroundColor: 'green', color: '#fff', height: '100%' }"
+        >
           <div>Hello from Vue slot</div>
 
           <div>{{ calendarEvent.title }}</div>
@@ -59,19 +61,21 @@ const customComponents: CustomComponents = {
         </div>
       </template>
 
-<!--      <template #dateGridEvent="{ calendarEvent }">-->
-<!--        <div :style="{ backgroundColor: 'green', color: '#fff', height: '100%', width: '100%' }">-->
-<!--          <div>{{ calendarEvent.title }}</div>-->
-<!--        </div>-->
-<!--      </template>-->
+      <!--      <template #dateGridEvent="{ calendarEvent }">-->
+      <!--        <div :style="{ backgroundColor: 'green', color: '#fff', height: '100%', width: '100%' }">-->
+      <!--          <div>{{ calendarEvent.title }}</div>-->
+      <!--        </div>-->
+      <!--      </template>-->
     </Calendar>
 
     <button @click="addEvent">add event</button>
 
     <button
-        class="button"
-        @click="incrementCounter"
-    >increment counter</button>
+      class="button"
+      @click="incrementCounter"
+    >
+      increment counter
+    </button>
 
     <div>{{ counter }}</div>
   </div>
@@ -87,7 +91,7 @@ const customComponents: CustomComponents = {
   border-radius: 4px;
   background-color: #1976d2;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   text-transform: uppercase;
