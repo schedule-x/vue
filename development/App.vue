@@ -13,7 +13,7 @@ import { createEventModalPlugin } from '@schedule-x/event-modal'
 import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
 import { seededEvents } from './data/seeded-events.ts'
 import { CustomComponents } from '../src/types/custom-components.ts'
-import CustomTimeGridEvent from './components/CustomTimeGridEvent.vue'
+// import CustomTimeGridEvent from './components/CustomTimeGridEvent.vue'
 import CustomDateGridEvent from './components/CustomDateGridEvent.vue'
 
 const counter = ref(0)
@@ -38,7 +38,7 @@ const addEvent = () => {
 }
 
 const customComponents: CustomComponents = {
-  timeGridEvent: CustomTimeGridEvent,
+  // timeGridEvent: CustomTimeGridEvent,
   dateGridEvent: CustomDateGridEvent,
 }
 </script>
@@ -48,11 +48,34 @@ const customComponents: CustomComponents = {
     <Calendar
       :calendar-app="calendarApp"
       :custom-components="customComponents"
-    />
+    >
+      <template #timeGridEvent="{ calendarEvent }">
+        <div
+          :style="{ backgroundColor: 'green', color: '#fff', height: '100%' }"
+        >
+          <div>Hello from Vue slot</div>
+
+          <div>{{ calendarEvent.title }}</div>
+
+          <div>{{ counter }}</div>
+        </div>
+      </template>
+
+      <!--      <template #dateGridEvent="{ calendarEvent }">-->
+      <!--        <div :style="{ backgroundColor: 'green', color: '#fff', height: '100%', width: '100%' }">-->
+      <!--          <div>{{ calendarEvent.title }}</div>-->
+      <!--        </div>-->
+      <!--      </template>-->
+    </Calendar>
 
     <button @click="addEvent">add event</button>
 
-    <button @click="incrementCounter">increment counter</button>
+    <button
+      class="button"
+      @click="incrementCounter"
+    >
+      increment counter
+    </button>
 
     <div>{{ counter }}</div>
   </div>
@@ -61,5 +84,21 @@ const customComponents: CustomComponents = {
 <style>
 .app {
   width: 100%;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1976d2;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 </style>

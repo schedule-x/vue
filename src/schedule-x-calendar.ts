@@ -29,9 +29,12 @@ export default defineComponent({
   },
 
   mounted() {
-    for (const [componentName, component] of Object.entries(
-      this.customComponents || {}
-    )) {
+    const allCustomVNodes = {
+      ...this.customComponents,
+      ...this.$slots,
+    }
+
+    for (const [componentName, component] of Object.entries(allCustomVNodes)) {
       this.calendarApp._setCustomComponentFn(
         componentName as 'timeGridEvent' | 'dateGridEvent',
         createCustomComponent(this.setCustomComponentMeta, component)

@@ -55,7 +55,20 @@ const customComponents = {
     <ScheduleXCalendar
       :calendar-app="calendarApp"
       :custom-components="customComponents"
-    />
+    >
+      <template #dateGridEvent="{ calendarEvent }">
+        <div
+          :style="{
+            backgroundColor: 'green',
+            color: '#fff',
+            height: '100%',
+            width: '100%',
+          }"
+        >
+          <div>{{ calendarEvent.title }}</div>
+        </div>
+      </template>
+    </ScheduleXCalendar>
   </div>
 </template>
 
