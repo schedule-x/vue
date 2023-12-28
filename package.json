@@ -21,18 +21,18 @@
     "build:publish": "npm run build && npm publish"
   },
   "peerDependencies": {
-    "@schedule-x/calendar": "^0.6.0",
+    "@schedule-x/calendar": "^0.7.0",
     "vue": "^3"
   },
   "devDependencies": {
     "@fontsource/open-sans": "^5.0.20",
     "@rollup/plugin-typescript": "^11.1.5",
-    "@schedule-x/drag-and-drop": "^0.5.0",
-    "@schedule-x/e2e-testing": "^0.5.0",
-    "@schedule-x/eslint-config": "^0.5.0",
-    "@schedule-x/event-modal": "^0.5.0",
-    "@schedule-x/prettier-config": "^0.5.0",
-    "@schedule-x/theme-default": "^0.5.0",
+    "@schedule-x/drag-and-drop": "^0.7.0",
+    "@schedule-x/e2e-testing": "^0.7.0",
+    "@schedule-x/eslint-config": "^0.7.0",
+    "@schedule-x/event-modal": "^0.7.0",
+    "@schedule-x/prettier-config": "^0.7.0",
+    "@schedule-x/theme-default": "^0.7.0",
     "@typescript-eslint/eslint-plugin": "^6.15.0",
     "@typescript-eslint/parser": "^6.15.0",
     "@vitejs/plugin-vue": "^4.5.2",
