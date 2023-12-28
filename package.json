@@ -1,6 +1,6 @@
 {
   "name": "@schedule-x/vue",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "main": "./dist/schedule-x-vue.umd.js",
   "module": "./dist/schedule-x-vue.mjs",
   "types": "./dist/types/index.d.ts",
