@@ -45,10 +45,7 @@ const customComponents: CustomComponents = {
 
 <template>
   <div class="app">
-    <Calendar
-      :calendar-app="calendarApp"
-      :custom-components="customComponents"
-    >
+    <Calendar :calendar-app="calendarApp" :custom-components="customComponents">
       <template #timeGridEvent="{ calendarEvent }">
         <div
           :style="{ backgroundColor: 'green', color: '#fff', height: '100%' }"
@@ -66,16 +63,41 @@ const customComponents: CustomComponents = {
       <!--          <div>{{ calendarEvent.title }}</div>-->
       <!--        </div>-->
       <!--      </template>-->
+
+      <template #monthAgendaEvent="{ calendarEvent }">
+        <div
+          :style="{
+            backgroundColor: 'cornflowerblue',
+            color: '#fff',
+            height: '80px',
+            width: '100%',
+          }"
+        >
+          <div>{{ calendarEvent.title }}</div>
+          <div>Counter: {{ counter }}</div>
+        </div>
+      </template>
+
+      <template #monthGridEvent="{ calendarEvent, hasStartDate }">
+        <div
+          :style="{
+            backgroundColor: 'green',
+            color: '#fff',
+            height: '100%',
+            width: '100%',
+            borderLeft: hasStartDate ? '5px solid lightgreen' : 'none',
+          }"
+        >
+          <span :style="{ paddingLeft: '4px' }">{{ calendarEvent.title }}</span>
+          &#8226;
+          <span>{{ counter }}</span>
+        </div>
+      </template>
     </Calendar>
 
     <button @click="addEvent">add event</button>
 
-    <button
-      class="button"
-      @click="incrementCounter"
-    >
-      increment counter
-    </button>
+    <button class="button" @click="incrementCounter">increment counter</button>
 
     <div>{{ counter }}</div>
   </div>
