@@ -1,9 +1,8 @@
-import {createCalendarHeaderPageObject} from "@schedule-x/e2e-testing";
+import { createCalendarHeaderPageObject } from '@schedule-x/e2e-testing'
 
 const calendarHeader = createCalendarHeaderPageObject()
 
 describe('Custom events test on desktop', () => {
-
   beforeEach(() => {
     cy.visit('/cypress/pages/002-custom-events/002-custom-events.html')
   })

@@ -65,20 +65,29 @@ const customComponents: CustomComponents = {
       <!--      </template>-->
 
       <template #monthAgendaEvent="{ calendarEvent }">
-        <div :style="{ backgroundColor: 'cornflowerblue', color: '#fff', height: '80px', width: '100%' }">
+        <div
+          :style="{
+            backgroundColor: 'cornflowerblue',
+            color: '#fff',
+            height: '80px',
+            width: '100%',
+          }"
+        >
           <div>{{ calendarEvent.title }}</div>
           <div>Counter: {{ counter }}</div>
         </div>
       </template>
 
       <template #monthGridEvent="{ calendarEvent, hasStartDate }">
-        <div :style="{
-          backgroundColor: 'green',
-          color: '#fff',
-          height: '100%',
-          width: '100%',
-          borderLeft: hasStartDate ? '5px solid lightgreen' : 'none',
-        }">
+        <div
+          :style="{
+            backgroundColor: 'green',
+            color: '#fff',
+            height: '100%',
+            width: '100%',
+            borderLeft: hasStartDate ? '5px solid lightgreen' : 'none',
+          }"
+        >
           <span :style="{ paddingLeft: '4px' }">{{ calendarEvent.title }}</span>
           &#8226;
           <span>{{ counter }}</span>
