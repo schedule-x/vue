@@ -1,6 +1,6 @@
 <template>
   <div class="custom-time-grid-event">
-    <input type="checkbox">
+    <input type="checkbox" />
     <div>Id: {{ calendarEvent.id }}</div>
     <div>Title: {{ calendarEvent.title }}</div>
   </div>
