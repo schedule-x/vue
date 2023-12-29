@@ -13,8 +13,6 @@
       "packagePatterns": ["^@schedule-x.*"]
     }
   ],
-  "ignoreDeps": ["vue", "react-dom"],
-  "ignorePaths": [
-    ".github/workflows/release.yml"
-  ]
+  "ignoreDeps": ["vue"],
+  "ignorePaths": [".github/workflows/release.yml"]
 }
