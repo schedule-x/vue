@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/schedule-x/vue/compare/v1.1.0...v1.1.1) (2023-12-29)
+
+
+### Bug Fixes
+
+* **event-modal:** make icon color in event modal reactive to theme changes ([12583d1](https://github.com/schedule-x/vue/commit/12583d19d03c1ce426b67b8ff5e72dabafb52497))
+
 # 1.0.0 (2023-12-29)
 
 
