@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/schedule-x/vue/compare/v1.1.1...v1.2.0) (2024-01-03)
+
+
+### Features
+
+* bump calendar to v1.1.0 ([1c92d1d](https://github.com/schedule-x/vue/commit/1c92d1d854886c44db29d705e14596c123d114ce))
+
 ## [1.1.1](https://github.com/schedule-x/vue/compare/v1.1.0...v1.1.1) (2023-12-29)
 
 
