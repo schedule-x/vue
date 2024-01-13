@@ -45,7 +45,7 @@
     "husky": "^8.0.3",
     "prettier": "^3.1.1",
     "sass": "^1.69.5",
-    "semantic-release": "^22.0.12",
+    "semantic-release": "^23.0.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vue-tsc": "^1.8.25"
