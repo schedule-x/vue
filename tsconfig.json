@@ -16,14 +16,14 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
   },
   "include": [
     "development/**/*.ts",
     "development/**/*.tsx",
     "development/**/*.vue",
     "cypress/**/*.cy.ts",
-    "cypress"
+    "cypress",
   ],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
 }
