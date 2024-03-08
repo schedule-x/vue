@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/schedule-x/vue/compare/v1.17.0...v1.18.0) (2024-03-08)
+
+
+### Features
+
+* add the ability to customize event modals ([#44](https://github.com/schedule-x/vue/issues/44)) ([d730717](https://github.com/schedule-x/vue/commit/d7307175af008d0804225d775a541d0dc0fde278))
+
 # [1.17.0](https://github.com/schedule-x/vue/compare/v1.16.0...v1.17.0) (2024-03-04)
 
 
