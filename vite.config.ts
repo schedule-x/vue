@@ -22,7 +22,7 @@ export default defineConfig({
       },
     },
   },
-  // Comment in when developing locally, given that the schedule-x monorepo is located next to this repo. Point the dependecies to the changes I make in the schedule-x repo.
+  // Comment in when developing locally, given that the schedule-x monorepo is located next to this repo.
   // resolve: {
   //   alias: {
   //     '@schedule-x/calendar': path.resolve(
