@@ -15,6 +15,7 @@ import { seededEvents } from './data/seeded-events.ts'
 import { CustomComponents } from '../src/types/custom-components.ts'
 // import CustomTimeGridEvent from './components/CustomTimeGridEvent.vue'
 import CustomDateGridEvent from './components/CustomDateGridEvent.vue'
+import CustomEventModal from './components/CustomEventModal.vue'
 
 const counter = ref(0)
 
@@ -25,6 +26,7 @@ const incrementCounter = () => {
 const calendarApp = createCalendar({
   views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
   events: seededEvents,
+  selectedDate: '2023-12-19',
   plugins: [createEventModalPlugin(), createDragAndDropPlugin()],
 })
 
@@ -40,6 +42,7 @@ const addEvent = () => {
 const customComponents: CustomComponents = {
   // timeGridEvent: CustomTimeGridEvent,
   dateGridEvent: CustomDateGridEvent,
+  eventModal: CustomEventModal,
 }
 </script>
 
