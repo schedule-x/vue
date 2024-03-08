@@ -5,6 +5,7 @@ export type CustomComponents = {
   dateGridEvent?: Component
   monthGridEvent?: Component
   monthAgendaEvent?: Component
+  eventModal?: Component
 }
 export type CustomComponentMeta = {
   Component: Component

@@ -36,7 +36,12 @@ export default defineComponent({
 
     for (const [componentName, component] of Object.entries(allCustomVNodes)) {
       this.calendarApp._setCustomComponentFn(
-        componentName as 'timeGridEvent' | 'dateGridEvent',
+        componentName as
+          | 'timeGridEvent'
+          | 'dateGridEvent'
+          | 'monthGridEvent'
+          | 'monthAgendaEvent'
+          | 'eventModal',
         createCustomComponent(this.setCustomComponentMeta, component)
       )
     }
