@@ -1,5 +1,6 @@
 {
   "name": "@schedule-x/vue",
+  "license": "MIT",
   "version": "1.36.0",
   "main": "./dist/schedule-x-vue.umd.js",
   "module": "./dist/schedule-x-vue.mjs",
