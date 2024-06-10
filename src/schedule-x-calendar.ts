@@ -50,7 +50,8 @@ export default defineComponent({
 
   methods: {
     setCustomComponentMeta(component: CustomComponentMeta) {
-      const newCustomComponents = [...this.customComponentsMeta]
+      const filterOutComponentsWithDetachedWrappers = ({ wrapperElement }) => wrapperElement instanceof HTMLElement;
+      const newCustomComponents = [...this.customComponentsMeta.filter(filterOutComponentsWithDetachedWrappers)]
       const ccid = component.wrapperElement.dataset.ccid
       const existingComponent = newCustomComponents.find(
         ({ wrapperElement }) => wrapperElement.dataset.ccid === ccid
