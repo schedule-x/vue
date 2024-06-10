@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.43.1](https://github.com/schedule-x/vue/compare/v1.43.0...v1.43.1) (2024-06-10)
+
+
+### Bug Fixes
+
+* wrapper element undefined ([#84](https://github.com/schedule-x/vue/issues/84)) ([484cc36](https://github.com/schedule-x/vue/commit/484cc367bdb9afc3300b8f0f17ae7ba67035798a))
+
 # [1.43.0](https://github.com/schedule-x/vue/compare/v1.42.1...v1.43.0) (2024-06-10)
 
 
