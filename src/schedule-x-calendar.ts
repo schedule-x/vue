@@ -50,7 +50,7 @@ export default defineComponent({
 
   methods: {
     setCustomComponentMeta(component: CustomComponentMeta) {
-      const filterOutComponentsWithDetachedWrappers = ({ wrapperElement }) =>
+      const filterOutComponentsWithDetachedWrappers = ({ wrapperElement }: { wrapperElement: HTMLElement | null }) =>
         wrapperElement instanceof HTMLElement
       const newCustomComponents = [
         ...this.customComponentsMeta.filter(
