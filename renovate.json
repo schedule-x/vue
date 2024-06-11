@@ -1,6 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":disableDependencyDashboard"],
+  "extends": ["config:base", ":disableDependencyDashboard", ":semanticCommits"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],
@@ -10,7 +10,8 @@
     },
     {
       "groupName": "Schedule-X monorepo packages",
-      "packagePatterns": ["^@schedule-x.*"]
+      "packagePatterns": ["^@schedule-x.*"],
+      "automerge": true
     }
   ],
   "ignoreDeps": ["vue"],
