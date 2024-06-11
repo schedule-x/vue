@@ -50,6 +50,9 @@ export default defineComponent({
 
   methods: {
     setCustomComponentMeta(component: CustomComponentMeta) {
+      const wrapperWasDetached = !(component.wrapperElement instanceof HTMLElement);
+      if (wrapperWasDetached) return
+
       const filterOutComponentsWithDetachedWrappers = ({ wrapperElement }: { wrapperElement: HTMLElement | null }) =>
         wrapperElement instanceof HTMLElement
       const newCustomComponents = [
