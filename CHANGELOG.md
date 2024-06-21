@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.43.5](https://github.com/schedule-x/vue/compare/v1.43.4...v1.43.5) (2024-06-21)
+
+
+### Bug Fixes
+
+* update schedule-x monorepo packages to v1.46.5 ([#91](https://github.com/schedule-x/vue/issues/91)) ([66d57d3](https://github.com/schedule-x/vue/commit/66d57d32d9da0aba888d7928e5fa28b74b0c9412))
+
 ## [1.43.4](https://github.com/schedule-x/vue/compare/v1.43.3...v1.43.4) (2024-06-17)
 
 
