@@ -4,52 +4,45 @@ All notable changes to this project will be documented in this file. See [Conven
 
 ## [1.43.6](https://github.com/schedule-x/vue/compare/v1.43.5...v1.43.6) (2024-06-24)
 
-
 ### Bug Fixes
 
-* update schedule-x monorepo packages to v1.46.7 ([#93](https://github.com/schedule-x/vue/issues/93)) ([12ce4f0](https://github.com/schedule-x/vue/commit/12ce4f013f91a0cf3bf09766187730670c0b4405))
+- update schedule-x monorepo packages to v1.46.7 ([#93](https://github.com/schedule-x/vue/issues/93)) ([12ce4f0](https://github.com/schedule-x/vue/commit/12ce4f013f91a0cf3bf09766187730670c0b4405))
 
 ## [1.43.5](https://github.com/schedule-x/vue/compare/v1.43.4...v1.43.5) (2024-06-21)
 
-
 ### Bug Fixes
 
-* update schedule-x monorepo packages to v1.46.5 ([#91](https://github.com/schedule-x/vue/issues/91)) ([66d57d3](https://github.com/schedule-x/vue/commit/66d57d32d9da0aba888d7928e5fa28b74b0c9412))
+- update schedule-x monorepo packages to v1.46.5 ([#91](https://github.com/schedule-x/vue/issues/91)) ([66d57d3](https://github.com/schedule-x/vue/commit/66d57d32d9da0aba888d7928e5fa28b74b0c9412))
 
 ## [1.43.4](https://github.com/schedule-x/vue/compare/v1.43.3...v1.43.4) (2024-06-17)
 
-
 ### Bug Fixes
 
-* update schedule-x monorepo packages to v1.46.2 ([#88](https://github.com/schedule-x/vue/issues/88)) ([9cca4df](https://github.com/schedule-x/vue/commit/9cca4df0e727628342a2fdc2b767693154048bcb))
+- update schedule-x monorepo packages to v1.46.2 ([#88](https://github.com/schedule-x/vue/issues/88)) ([9cca4df](https://github.com/schedule-x/vue/commit/9cca4df0e727628342a2fdc2b767693154048bcb))
 
 ## [1.43.3](https://github.com/schedule-x/vue/compare/v1.43.2...v1.43.3) (2024-06-11)
 
-
 ### Bug Fixes
 
-* don't try to access non-existing wrappers ([#87](https://github.com/schedule-x/vue/issues/87)) ([1ab24e6](https://github.com/schedule-x/vue/commit/1ab24e69ab2b51e6c65558e5b2d8035e99ebf747))
+- don't try to access non-existing wrappers ([#87](https://github.com/schedule-x/vue/issues/87)) ([1ab24e6](https://github.com/schedule-x/vue/commit/1ab24e69ab2b51e6c65558e5b2d8035e99ebf747))
 
 ## [1.43.2](https://github.com/schedule-x/vue/compare/v1.43.1...v1.43.2) (2024-06-11)
 
-
 ### Bug Fixes
 
-* update schedule-x monorepo packages to v1.46.1 ([#85](https://github.com/schedule-x/vue/issues/85)) ([4da9bc0](https://github.com/schedule-x/vue/commit/4da9bc01e4125a185cc25e2f9e71b5dfebf23fb2))
+- update schedule-x monorepo packages to v1.46.1 ([#85](https://github.com/schedule-x/vue/issues/85)) ([4da9bc0](https://github.com/schedule-x/vue/commit/4da9bc01e4125a185cc25e2f9e71b5dfebf23fb2))
 
 ## [1.43.1](https://github.com/schedule-x/vue/compare/v1.43.0...v1.43.1) (2024-06-10)
 
-
 ### Bug Fixes
 
-* wrapper element undefined ([#84](https://github.com/schedule-x/vue/issues/84)) ([484cc36](https://github.com/schedule-x/vue/commit/484cc367bdb9afc3300b8f0f17ae7ba67035798a))
+- wrapper element undefined ([#84](https://github.com/schedule-x/vue/issues/84)) ([484cc36](https://github.com/schedule-x/vue/commit/484cc367bdb9afc3300b8f0f17ae7ba67035798a))
 
 # [1.43.0](https://github.com/schedule-x/vue/compare/v1.42.1...v1.43.0) (2024-06-10)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.46.0 ([#83](https://github.com/schedule-x/vue/issues/83)) ([8c0358c](https://github.com/schedule-x/vue/commit/8c0358cda4b6bc5416b4e76f681c670a0d91f1f4))
+- update schedule-x monorepo packages to v1.46.0 ([#83](https://github.com/schedule-x/vue/issues/83)) ([8c0358c](https://github.com/schedule-x/vue/commit/8c0358cda4b6bc5416b4e76f681c670a0d91f1f4))
 
 ## [1.42.1](https://github.com/schedule-x/vue/compare/v1.42.0...v1.42.1) (2024-06-08)
 
