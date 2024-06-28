@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.44.0](https://github.com/schedule-x/vue/compare/v1.43.6...v1.44.0) (2024-06-28)
+
+
+### Features
+
+* add header slots ([#96](https://github.com/schedule-x/vue/issues/96)) ([e8f297c](https://github.com/schedule-x/vue/commit/e8f297c4e1647016b13dac4497218a58315508c4))
+
 ## [1.43.6](https://github.com/schedule-x/vue/compare/v1.43.5...v1.43.6) (2024-06-24)
 
 ### Bug Fixes
