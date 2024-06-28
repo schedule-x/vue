@@ -44,6 +44,8 @@ const customComponents: CustomComponents = {
   dateGridEvent: CustomDateGridEvent,
   eventModal: CustomEventModal,
 }
+
+const leftPrependState = ref(0)
 </script>
 
 <template>
@@ -60,6 +62,18 @@ const customComponents: CustomComponents = {
           <div>{{ counter }}</div>
         </div>
       </template>
+
+      <template #headerContentLeftPrepend>
+        prepend L
+        {{ leftPrependState }}
+        <button @click="leftPrependState++">plus</button>
+      </template>
+
+      <template #headerContentLeftAppend> append L </template>
+
+      <template #headerContentRightPrepend> prepend R </template>
+
+      <template #headerContentRightAppend> append R </template>
 
       <!--      <template #dateGridEvent="{ calendarEvent }">-->
       <!--        <div :style="{ backgroundColor: 'green', color: '#fff', height: '100%', width: '100%' }">-->

@@ -10,8 +10,7 @@
     },
     {
       "groupName": "Schedule-X monorepo packages",
-      "packagePatterns": ["^@schedule-x.*"],
-      "automerge": true
+      "packagePatterns": ["^@schedule-x.*"]
     }
   ],
   "ignoreDeps": ["vue"],

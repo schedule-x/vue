@@ -6,6 +6,10 @@ export type CustomComponents = {
   monthGridEvent?: Component
   monthAgendaEvent?: Component
   eventModal?: Component
+  headerContentLeftPrepend?: Component
+  headerContentLeftAppend?: Component
+  headerContentRightPrepend?: Component
+  headerContentRightAppend?: Component
 }
 export type CustomComponentMeta = {
   Component: Component
