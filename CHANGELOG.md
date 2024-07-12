@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.47.0](https://github.com/schedule-x/vue/compare/v1.46.0...v1.47.0) (2024-07-12)
+
+
+### Features
+
+* add date picker component ([#102](https://github.com/schedule-x/vue/issues/102)) ([dccfeb4](https://github.com/schedule-x/vue/commit/dccfeb4235e8d36545bf6f2bd8297ea44e0f50e6))
+
 # [1.46.0](https://github.com/schedule-x/vue/compare/v1.45.0...v1.46.0) (2024-07-06)
 
 ### Features
