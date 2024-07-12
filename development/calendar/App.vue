@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Calendar from '../src/schedule-x-calendar.ts'
+import Calendar from '../../src/schedule-x-calendar.ts'
 import {
   createCalendar,
   viewDay,
@@ -11,11 +11,11 @@ import '@schedule-x/theme-default/dist/index.css'
 import { ref } from 'vue'
 import { createEventModalPlugin } from '@schedule-x/event-modal'
 import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
-import { seededEvents } from './data/seeded-events.ts'
-import { CustomComponents } from '../src/types/custom-components.ts'
+import { seededEvents } from '../data/seeded-events.ts'
+import { CustomComponents } from '../../src/types/custom-components.ts'
 // import CustomTimeGridEvent from './components/CustomTimeGridEvent.vue'
-import CustomDateGridEvent from './components/CustomDateGridEvent.vue'
-import CustomEventModal from './components/CustomEventModal.vue'
+import CustomDateGridEvent from '../components/CustomDateGridEvent.vue'
+import CustomEventModal from '../components/CustomEventModal.vue'
 
 const counter = ref(0)
 
@@ -50,7 +50,10 @@ const leftPrependState = ref(0)
 
 <template>
   <div class="app">
-    <Calendar :calendar-app="calendarApp" :custom-components="customComponents">
+    <Calendar
+      :calendar-app="calendarApp"
+      :custom-components="customComponents"
+    >
       <template #timeGridEvent="{ calendarEvent }">
         <div
           :style="{ backgroundColor: 'green', color: '#fff', height: '100%' }"
@@ -114,7 +117,12 @@ const leftPrependState = ref(0)
 
     <button @click="addEvent">add event</button>
 
-    <button class="button" @click="incrementCounter">increment counter</button>
+    <button
+      class="button"
+      @click="incrementCounter"
+    >
+      increment counter
+    </button>
 
     <div>{{ counter }}</div>
   </div>

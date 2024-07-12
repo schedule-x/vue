@@ -4,31 +4,27 @@ All notable changes to this project will be documented in this file. See [Conven
 
 # [1.46.0](https://github.com/schedule-x/vue/compare/v1.45.0...v1.46.0) (2024-07-06)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.49.0 ([#100](https://github.com/schedule-x/vue/issues/100)) ([4d7f4bc](https://github.com/schedule-x/vue/commit/4d7f4bc3e26be1ba9e8de0b59ec81ec34bf25b66))
+- update schedule-x monorepo packages to v1.49.0 ([#100](https://github.com/schedule-x/vue/issues/100)) ([4d7f4bc](https://github.com/schedule-x/vue/commit/4d7f4bc3e26be1ba9e8de0b59ec81ec34bf25b66))
 
 # [1.45.0](https://github.com/schedule-x/vue/compare/v1.44.1...v1.45.0) (2024-07-06)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v1.48.0 ([#99](https://github.com/schedule-x/vue/issues/99)) ([d354419](https://github.com/schedule-x/vue/commit/d3544191362a9e73e7f449e3c09a2c7fefe072f1))
+- update schedule-x monorepo packages to v1.48.0 ([#99](https://github.com/schedule-x/vue/issues/99)) ([d354419](https://github.com/schedule-x/vue/commit/d3544191362a9e73e7f449e3c09a2c7fefe072f1))
 
 ## [1.44.1](https://github.com/schedule-x/vue/compare/v1.44.0...v1.44.1) (2024-07-02)
 
-
 ### Bug Fixes
 
-* update schedule-x monorepo packages to v1.47.1 ([#97](https://github.com/schedule-x/vue/issues/97)) ([eca5656](https://github.com/schedule-x/vue/commit/eca5656e16b1851c7b69b2b6523c79cdba38025f))
+- update schedule-x monorepo packages to v1.47.1 ([#97](https://github.com/schedule-x/vue/issues/97)) ([eca5656](https://github.com/schedule-x/vue/commit/eca5656e16b1851c7b69b2b6523c79cdba38025f))
 
 # [1.44.0](https://github.com/schedule-x/vue/compare/v1.43.6...v1.44.0) (2024-06-28)
 
-
 ### Features
 
-* add header slots ([#96](https://github.com/schedule-x/vue/issues/96)) ([e8f297c](https://github.com/schedule-x/vue/commit/e8f297c4e1647016b13dac4497218a58315508c4))
+- add header slots ([#96](https://github.com/schedule-x/vue/issues/96)) ([e8f297c](https://github.com/schedule-x/vue/commit/e8f297c4e1647016b13dac4497218a58315508c4))
 
 ## [1.43.6](https://github.com/schedule-x/vue/compare/v1.43.5...v1.43.6) (2024-06-24)
 
