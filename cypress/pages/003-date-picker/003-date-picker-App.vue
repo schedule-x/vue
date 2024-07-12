@@ -1,4 +1,6 @@
 <script setup lang="ts">
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { SxDatePicker } from '../../..'
 import '@schedule-x/theme-default/dist/date-picker.css'
 import { ref } from 'vue'
