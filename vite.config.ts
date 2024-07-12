@@ -41,6 +41,10 @@ export default defineConfig({
   //       __dirname,
   //       '../schedule-x/packages/theme-default'
   //     ),
+  //     '@schedule-x/date-picker': path.resolve(
+  //       __dirname,
+  //       '../schedule-x/packages/date-picker'
+  //     ),
   //   },
   // },
 })

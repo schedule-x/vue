@@ -22,7 +22,8 @@
     "build:publish": "npm run build && npm publish"
   },
   "peerDependencies": {
-    "@schedule-x/calendar": "1.49.0",
+    "@schedule-x/calendar": "1.51.0",
+    "@schedule-x/date-picker": "^1.51.0",
     "vue": "^3"
   },
   "devDependencies": {
