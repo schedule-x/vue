@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.47.1](https://github.com/schedule-x/vue/compare/v1.47.0...v1.47.1) (2024-07-18)
+
+
+### Bug Fixes
+
+* reactivity error ([#103](https://github.com/schedule-x/vue/issues/103)) ([133ce6b](https://github.com/schedule-x/vue/commit/133ce6b36a29356c3661923291ba18f70be80999))
+
 # [1.47.0](https://github.com/schedule-x/vue/compare/v1.46.0...v1.47.0) (2024-07-12)
 
 ### Features
