@@ -1,4 +1,11 @@
-import { defineComponent, Fragment, h, PropType, Teleport } from 'vue'
+import {
+  defineComponent,
+  Fragment,
+  h,
+  isReactive,
+  PropType,
+  Teleport,
+} from 'vue'
 import { CalendarApp } from '@schedule-x/calendar'
 import type {
   CustomComponentMeta,
@@ -6,6 +13,7 @@ import type {
   CustomComponentsMeta,
 } from './types/custom-components'
 import { createCustomComponent } from './utils/stateful/custom-components'
+import { ReactivityError } from './utils/stateless/errors/reactivity.error.ts'
 
 export default defineComponent({
   name: 'ScheduleXCalendar',
@@ -29,6 +37,12 @@ export default defineComponent({
   },
 
   mounted() {
+    if (isReactive(this.calendarApp)) {
+      throw new ReactivityError(
+        'calendarApp cannot be saved in a ref. Since this causes deep reactivity, it destroys the calendars internal reactivity. Save in a normal const or shallowRef'
+      )
+    }
+
     const allCustomVNodes = {
       ...this.customComponents,
       ...this.$slots,

@@ -8,7 +8,7 @@ import {
   viewWeek,
 } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
-import { ref } from 'vue'
+import { ref, shallowRef } from 'vue'
 import { createEventModalPlugin } from '@schedule-x/event-modal'
 import { createDragAndDropPlugin } from '@schedule-x/drag-and-drop'
 import { seededEvents } from '../data/seeded-events.ts'
@@ -23,15 +23,17 @@ const incrementCounter = () => {
   counter.value++
 }
 
-const calendarApp = createCalendar({
-  views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
-  events: seededEvents,
-  selectedDate: '2023-12-19',
-  plugins: [createEventModalPlugin(), createDragAndDropPlugin()],
-})
+const calendarApp = shallowRef(
+  createCalendar({
+    views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
+    events: seededEvents,
+    selectedDate: '2023-12-19',
+    plugins: [createEventModalPlugin(), createDragAndDropPlugin()],
+  })
+)
 
 const addEvent = () => {
-  calendarApp.events.add({
+  calendarApp.value.events.add({
     id: 2,
     title: 'Event 2',
     start: '2023-12-19',
