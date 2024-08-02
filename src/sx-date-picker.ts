@@ -1,5 +1,6 @@
 import { defineComponent, watch, onMounted, h, PropType } from 'vue'
-import { createDatePicker, DatePickerConfig } from '@schedule-x/date-picker'
+import { createDatePicker } from '@schedule-x/date-picker'
+import type { IDatePickerConfig } from '@schedule-x/date-picker'
 
 export default defineComponent({
   name: 'SxDatePicker',
@@ -10,7 +11,7 @@ export default defineComponent({
       required: true,
     },
     config: {
-      type: Object as PropType<Omit<DatePickerConfig, 'selectedDate'>>,
+      type: Object as PropType<Omit<IDatePickerConfig, 'selectedDate'>>,
       default: () => ({
         listeners: {},
       }),
