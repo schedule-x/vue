@@ -13,7 +13,7 @@ import type {
   CustomComponentsMeta,
 } from './types/custom-components'
 import { createCustomComponent } from './utils/stateful/custom-components'
-import { ReactivityError } from './utils/stateless/errors/reactivity.error.ts'
+import { ReactivityError } from './utils/stateless/errors/reactivity.error'
 
 export default defineComponent({
   name: 'ScheduleXCalendar',
