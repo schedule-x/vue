@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/vue-query'
 import { Ref } from 'vue'
-import { DateRange } from './types'
+import { DateRange } from './types.ts'
 
 import getRandomEvents from './getRandomEvents.ts'
 

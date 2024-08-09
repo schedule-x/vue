@@ -17,8 +17,8 @@ import { CustomComponents } from '../../src/types/custom-components.ts'
 import CustomDateGridEvent from '../components/CustomDateGridEvent.vue'
 import CustomEventModal from '../components/CustomEventModal.vue'
 import dayjs from 'dayjs'
-import { DateRange } from '../../src/types.ts'
-import useEvents from '../../src/useEvents.ts'
+import { DateRange } from '../types.ts'
+import useEvents from '../useEvents.ts'
 import { createEventsServicePlugin } from '@schedule-x/events-service'
 
 const dateRange = ref<DateRange>()
@@ -75,10 +75,6 @@ const addEvent = () => {
 
 watchEffect(() => {
   if (data.value) {
-    data.value.forEach((event) => {
-      console.log(event.start)
-    })
-    console.log(data.value.length)
     eventsService.set(data.value)
   }
 })
