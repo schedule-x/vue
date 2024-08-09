@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.54.0](https://github.com/schedule-x/vue/compare/v1.53.0...v1.54.0) (2024-08-09)
+
+
+### Bug Fixes
+
+* date picker dts generation ([#112](https://github.com/schedule-x/vue/issues/112)) ([60687cb](https://github.com/schedule-x/vue/commit/60687cbef111547a230789ffe3947c7026404f88))
+
+
+### Features
+
+* update schedule-x monorepo packages to v1.58.0 ([#113](https://github.com/schedule-x/vue/issues/113)) ([5d6af4c](https://github.com/schedule-x/vue/commit/5d6af4c2c38c3aad482360babdd250ab9cec0da3))
+
 # [1.53.0](https://github.com/schedule-x/vue/compare/v1.52.0...v1.53.0) (2024-08-01)
 
 ### Features
