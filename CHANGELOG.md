@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.58.0](https://github.com/schedule-x/vue/compare/v1.57.1...v1.58.0) (2024-09-07)
+
+
+### Features
+
+* header content slot ([#123](https://github.com/schedule-x/vue/issues/123)) ([8da0a6b](https://github.com/schedule-x/vue/commit/8da0a6baf1a28ffd2d46a9fc620260abcaa64d39))
+
 ## [1.57.1](https://github.com/schedule-x/vue/compare/v1.57.0...v1.57.1) (2024-09-06)
 
 ### Bug Fixes
