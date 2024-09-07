@@ -10,6 +10,7 @@ export type CustomComponents = {
   headerContentLeftAppend?: Component
   headerContentRightPrepend?: Component
   headerContentRightAppend?: Component
+  headerContent?: Component
 }
 export type CustomComponentMeta = {
   Component: Component
