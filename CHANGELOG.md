@@ -4,10 +4,9 @@ All notable changes to this project will be documented in this file. See [Conven
 
 ## [1.57.1](https://github.com/schedule-x/vue/compare/v1.57.0...v1.57.1) (2024-09-06)
 
-
 ### Bug Fixes
 
-* loosen up version coupling ([#122](https://github.com/schedule-x/vue/issues/122)) ([b2c015a](https://github.com/schedule-x/vue/commit/b2c015ad1e2d3e643c1114fc6f169a95e238f1ec))
+- loosen up version coupling ([#122](https://github.com/schedule-x/vue/issues/122)) ([b2c015a](https://github.com/schedule-x/vue/commit/b2c015ad1e2d3e643c1114fc6f169a95e238f1ec))
 
 # [1.57.0](https://github.com/schedule-x/vue/compare/v1.56.1...v1.57.0) (2024-09-04)
 
