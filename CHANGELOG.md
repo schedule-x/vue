@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.0.0](https://github.com/schedule-x/vue/compare/v1.58.0...v2.0.0) (2024-09-23)
+
+
+### Features
+
+* bump schedule-x deps to v2 ([#125](https://github.com/schedule-x/vue/issues/125)) ([7acb5e1](https://github.com/schedule-x/vue/commit/7acb5e1133026c7bebe4ab3ffe75d7812ff75b6e))
+
+
+### BREAKING CHANGES
+
+* plugins from v1 not compatible with v2
+
 # [1.58.0](https://github.com/schedule-x/vue/compare/v1.57.1...v1.58.0) (2024-09-07)
 
 ### Features
