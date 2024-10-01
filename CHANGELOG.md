@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/schedule-x/vue/compare/v2.1.1...v2.2.0) (2024-10-01)
+
+
+### Features
+
+* add custom component for modal additional fields ([#131](https://github.com/schedule-x/vue/issues/131)) ([4522b76](https://github.com/schedule-x/vue/commit/4522b76ef58c1b92cf21952dfe3218338f4a0776))
+
 ## [2.1.1](https://github.com/schedule-x/vue/compare/v2.1.0...v2.1.1) (2024-10-01)
 
 ### Bug Fixes
