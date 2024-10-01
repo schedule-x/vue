@@ -4,29 +4,25 @@ All notable changes to this project will be documented in this file. See [Conven
 
 ## [2.1.1](https://github.com/schedule-x/vue/compare/v2.1.0...v2.1.1) (2024-10-01)
 
-
 ### Bug Fixes
 
-* update schedule-x monorepo packages to v2.2.1 ([#128](https://github.com/schedule-x/vue/issues/128)) ([2b887c2](https://github.com/schedule-x/vue/commit/2b887c279e2823405b6886c709612ba5dada5866))
+- update schedule-x monorepo packages to v2.2.1 ([#128](https://github.com/schedule-x/vue/issues/128)) ([2b887c2](https://github.com/schedule-x/vue/commit/2b887c279e2823405b6886c709612ba5dada5866))
 
 # [2.1.0](https://github.com/schedule-x/vue/compare/v2.0.0...v2.1.0) (2024-09-26)
 
-
 ### Features
 
-* update schedule-x monorepo packages to v2.2.0 ([#127](https://github.com/schedule-x/vue/issues/127)) ([f362c4a](https://github.com/schedule-x/vue/commit/f362c4ad7c3b274d746695c9f070abe867fbe905))
+- update schedule-x monorepo packages to v2.2.0 ([#127](https://github.com/schedule-x/vue/issues/127)) ([f362c4a](https://github.com/schedule-x/vue/commit/f362c4ad7c3b274d746695c9f070abe867fbe905))
 
 # [2.0.0](https://github.com/schedule-x/vue/compare/v1.58.0...v2.0.0) (2024-09-23)
 
-
 ### Features
 
-* bump schedule-x deps to v2 ([#125](https://github.com/schedule-x/vue/issues/125)) ([7acb5e1](https://github.com/schedule-x/vue/commit/7acb5e1133026c7bebe4ab3ffe75d7812ff75b6e))
-
+- bump schedule-x deps to v2 ([#125](https://github.com/schedule-x/vue/issues/125)) ([7acb5e1](https://github.com/schedule-x/vue/commit/7acb5e1133026c7bebe4ab3ffe75d7812ff75b6e))
 
 ### BREAKING CHANGES
 
-* plugins from v1 not compatible with v2
+- plugins from v1 not compatible with v2
 
 # [1.58.0](https://github.com/schedule-x/vue/compare/v1.57.1...v1.58.0) (2024-09-07)
 

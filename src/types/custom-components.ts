@@ -11,6 +11,7 @@ export type CustomComponents = {
   headerContentRightPrepend?: Component
   headerContentRightAppend?: Component
   headerContent?: Component
+  interactiveModalAdditionalFields?: Component
 }
 export type CustomComponentMeta = {
   Component: Component
