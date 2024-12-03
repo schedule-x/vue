@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.9.0](https://github.com/schedule-x/vue/compare/v2.8.0...v2.9.0) (2024-12-03)
+
+
+### Features
+
+* update schedule-x monorepo packages to v2.10.0 ([#143](https://github.com/schedule-x/vue/issues/143)) ([8aa1444](https://github.com/schedule-x/vue/commit/8aa1444c8231c40742e93a2eea561fbac1cec3c8))
+
 # [2.8.0](https://github.com/schedule-x/vue/compare/v2.7.1...v2.8.0) (2024-11-30)
 
 
