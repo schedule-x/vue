@@ -62,6 +62,10 @@ export default defineComponent({
     this.calendarApp.render(document.getElementById(this.elId) as HTMLElement)
   },
 
+  unmounted() {
+    this.calendarApp.destroy()
+  },
+
   methods: {
     setCustomComponentMeta(component: CustomComponentMeta) {
       const wrapperWasDetached = !(
