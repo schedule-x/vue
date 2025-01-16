@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.12.1](https://github.com/schedule-x/vue/compare/v2.12.0...v2.12.1) (2025-01-16)
+
+
+### Bug Fixes
+
+* destroy calendar on unmount ([#150](https://github.com/schedule-x/vue/issues/150)) ([29c8346](https://github.com/schedule-x/vue/commit/29c834628d397f8c05d9a9c7313677c918d0fe5e))
+
 # [2.12.0](https://github.com/schedule-x/vue/compare/v2.11.1...v2.12.0) (2025-01-06)
 
 ### Features
