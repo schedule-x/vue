@@ -68,7 +68,7 @@ const customComponents: CustomComponents = {
         </div>
       </template>
 
-      <template #headerContent> My custom header </template>
+      <!--      <template #headerContent> My custom header </template>-->
       <!--      <template #headerContentLeftPrepend>-->
       <!--        prepend L-->
       <!--        {{ leftPrependState }}-->
