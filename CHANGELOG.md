@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.14.1](https://github.com/schedule-x/vue/compare/v2.14.0...v2.14.1) (2025-01-31)
+
+
+### Bug Fixes
+
+* **deps:** update schedule-x monorepo packages to v2.16.1 ([#154](https://github.com/schedule-x/vue/issues/154)) ([dc5db74](https://github.com/schedule-x/vue/commit/dc5db743c3298b828f30d0c8521041cc9766f0f6))
+
 # [2.14.0](https://github.com/schedule-x/vue/compare/v2.13.0...v2.14.0) (2025-01-28)
 
 
