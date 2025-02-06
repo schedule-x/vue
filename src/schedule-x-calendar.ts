@@ -49,6 +49,8 @@ export default defineComponent({
     }
 
     for (const [componentName, component] of Object.entries(allCustomVNodes)) {
+      if (!component) continue
+
       this.calendarApp._setCustomComponentFn(
         componentName,
         createCustomComponent(this.setCustomComponentMeta, component)
@@ -97,6 +99,8 @@ export default defineComponent({
   render() {
     const customVNodes = this.customComponentsMeta.map(
       ({ Component, wrapperElement }) => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         return h(Teleport, { to: wrapperElement }, Component)
       }
     )
