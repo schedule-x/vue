@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.16.0](https://github.com/schedule-x/vue/compare/v2.15.0...v2.16.0) (2025-02-06)
+
+
+### Features
+
+* dynamic custom components ([#157](https://github.com/schedule-x/vue/issues/157)) ([762e4e8](https://github.com/schedule-x/vue/commit/762e4e8365894a8a82a2f4be67ea3694a4fdba49))
+
 # [2.15.0](https://github.com/schedule-x/vue/compare/v2.14.1...v2.15.0) (2025-02-04)
 
 ### Features
