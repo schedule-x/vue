@@ -1,18 +1,10 @@
 import { Component } from 'vue'
+import { CustomComponentName } from '@schedule-x/shared'
 
 export type CustomComponents = {
-  timeGridEvent?: Component
-  dateGridEvent?: Component
-  monthGridEvent?: Component
-  monthAgendaEvent?: Component
-  eventModal?: Component
-  headerContentLeftPrepend?: Component
-  headerContentLeftAppend?: Component
-  headerContentRightPrepend?: Component
-  headerContentRightAppend?: Component
-  headerContent?: Component
-  interactiveModalAdditionalFields?: Component
+  [key in CustomComponentName]?: Component
 }
+
 export type CustomComponentMeta = {
   Component: Component
   wrapperElement: HTMLElement
