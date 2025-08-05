@@ -27,17 +27,19 @@ const calendarApp = shallowRef(
   createCalendar({
     views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
     events: seededEvents,
-    selectedDate: '2023-12-19',
+    selectedDate: Temporal.PlainDate.from('2023-12-19'),
     plugins: [createEventModalPlugin(), createDragAndDropPlugin()],
+    timezone: 'Europe/Stockholm',
   })
 )
 
 const addEvent = () => {
+  console.log('hello')
   calendarApp.value.events.add({
     id: 2,
     title: 'Event 2',
-    start: '2023-12-19',
-    end: '2023-12-19',
+    start: Temporal.ZonedDateTime.from('2023-12-19T00:00:00+01:00[Europe/Stockholm]'),
+    end: Temporal.ZonedDateTime.from('2023-12-19T01:00:00+01:00[Europe/Stockholm]'),
   })
 }
 
@@ -56,7 +58,7 @@ const customComponents: CustomComponents = {
       :calendar-app="calendarApp"
       :custom-components="customComponents"
     >
-      <template #timeGridEvent="{ calendarEvent }">
+      <!-- <template #timeGridEvent="{ calendarEvent }">
         <div
           :style="{ backgroundColor: 'green', color: '#fff', height: '100%' }"
         >
@@ -66,7 +68,7 @@ const customComponents: CustomComponents = {
 
           <div>{{ counter }}</div>
         </div>
-      </template>
+      </template> -->
 
       <!--      <template #headerContent> My custom header </template>-->
       <!--      <template #headerContentLeftPrepend>-->

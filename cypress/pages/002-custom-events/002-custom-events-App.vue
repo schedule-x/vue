@@ -12,40 +12,42 @@ import {
 import '@schedule-x/theme-default/dist/index.css'
 import CustomDateGridEvent from '../../../development/components/CustomDateGridEvent.vue'
 import CustomTimeGridEvent from '../../../development/components/CustomTimeGridEvent.vue'
+import 'temporal-polyfill/global'
 
 const calendarApp = createCalendar({
   views: [viewWeek, viewDay, viewMonthAgenda, viewMonthGrid],
-  selectedDate: '2023-12-18',
+  selectedDate: Temporal.PlainDate.from('2023-12-18'),
+  timezone: 'Europe/Stockholm',
   events: [
     {
       id: 1,
       title: 'Event 1',
-      start: '2023-12-18',
-      end: '2023-12-18',
+      start: Temporal.PlainDate.from('2023-12-18'),
+      end: Temporal.PlainDate.from('2023-12-18'),
     },
     {
       id: 2,
       title: 'Event 2',
-      start: '2023-12-17',
-      end: '2023-12-21',
+      start: Temporal.PlainDate.from('2023-12-17'),
+      end: Temporal.PlainDate.from('2023-12-21'),
     },
     {
       id: 3,
       title: 'Event 3',
-      start: '2023-12-22',
-      end: '2023-12-28',
+      start: Temporal.PlainDate.from('2023-12-22'),
+      end: Temporal.PlainDate.from('2023-12-28'),
     },
     {
       id: 4,
       title: 'Event 4',
-      start: '2023-12-22',
-      end: '2023-12-28',
+      start: Temporal.PlainDate.from('2023-12-22'),
+      end: Temporal.PlainDate.from('2023-12-28'),
     },
     {
       id: 5,
       title: 'Event 5',
-      start: '2023-12-18 04:15',
-      end: '2023-12-18 05:15',
+      start: Temporal.ZonedDateTime.from('2023-12-18T04:15:00+01:00[Europe/Stockholm]'),
+      end: Temporal.ZonedDateTime.from('2023-12-18T05:15:00+01:00[Europe/Stockholm]'),
     },
   ],
 })

@@ -1,7 +1,7 @@
 {
   "name": "@schedule-x/vue",
   "license": "MIT",
-  "version": "2.34.0",
+  "version": "3.0.0-beta.1",
   "main": "./dist/schedule-x-vue.umd.js",
   "module": "./dist/schedule-x-vue.mjs",
   "types": "./dist/types/index.d.ts",
@@ -22,20 +22,21 @@
     "build:publish": "npm run build && npm publish"
   },
   "peerDependencies": {
-    "@schedule-x/calendar": "2.36.0",
-    "@schedule-x/date-picker": "2.36.0",
+    "@schedule-x/calendar": "^3.0.0-beta.5",
+    "@schedule-x/date-picker": "beta",
     "vue": "^3"
   },
   "devDependencies": {
     "@fontsource/open-sans": "^5.0.20",
     "@rollup/plugin-typescript": "^12.0.0",
-    "@schedule-x/drag-and-drop": "^2.18.0",
+    "@schedule-x/calendar": "^3.0.0-beta.5",
+    "@schedule-x/drag-and-drop": "3.0.0-beta.5",
     "@schedule-x/e2e-testing": "^2.18.0",
     "@schedule-x/eslint-config": "^2.18.0",
-    "@schedule-x/event-modal": "^2.18.0",
+    "@schedule-x/event-modal": "3.0.0-beta.5",
     "@schedule-x/prettier-config": "^2.18.0",
-    "@schedule-x/shared": "^2.18.0",
-    "@schedule-x/theme-default": "^2.18.0",
+    "@schedule-x/shared": "3.0.0-beta.5",
+    "@schedule-x/theme-default": "3.0.0-beta.5",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
@@ -49,6 +50,7 @@
     "prettier": "^3.1.1",
     "sass": "^1.69.5",
     "semantic-release": "^24.0.0",
+    "temporal-polyfill": "^0.3.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vue-tsc": "^3.0.0"
