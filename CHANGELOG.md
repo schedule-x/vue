@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.35.0](https://github.com/schedule-x/vue/compare/v2.34.0...v2.35.0) (2025-08-27)
+
+
+### Features
+
+* bump ([14c56ef](https://github.com/schedule-x/vue/commit/14c56ef329c95abe6ef83eedc3a0e0eeeef1edff))
+* remove date picker ([0587f4a](https://github.com/schedule-x/vue/commit/0587f4afbfe1b38b3f3a3f33953298070b806af0))
+
 # [2.34.0](https://github.com/schedule-x/vue/compare/v2.33.0...v2.34.0) (2025-07-09)
 
 
