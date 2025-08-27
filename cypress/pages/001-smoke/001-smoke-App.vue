@@ -10,16 +10,19 @@ import {
   viewWeek,
 } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
+import 'temporal-polyfill/global'
+import { Temporal } from 'temporal-polyfill'
 
 const calendarApp = createCalendar({
-  selectedDate: '2023-12-18',
+  selectedDate: Temporal.PlainDate.from('2023-12-18'),
   views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
+  timezone: 'Europe/Stockholm',
   events: [
     {
       id: 1,
       title: 'Event 1',
-      start: '2023-12-18',
-      end: '2023-12-18',
+      start: Temporal.PlainDate.from('2023-12-18'),
+      end: Temporal.PlainDate.from('2023-12-18'),
     },
   ],
 })
@@ -30,8 +33,8 @@ const addEvent = () => {
   calendarApp.events.add({
     id: newEventId,
     title: 'Event 2',
-    start: '2023-12-19',
-    end: '2023-12-19',
+    start: Temporal.PlainDate.from('2023-12-19'),
+    end: Temporal.PlainDate.from('2023-12-19'),
   })
 }
 
@@ -39,8 +42,8 @@ const updateEvent = () => {
   calendarApp.events.update({
     id: newEventId,
     title: 'Event 2 updated',
-    start: '2023-12-19',
-    end: '2023-12-19',
+    start: Temporal.PlainDate.from('2023-12-19'),
+    end: Temporal.PlainDate.from('2023-12-19'),
   })
 }
 
