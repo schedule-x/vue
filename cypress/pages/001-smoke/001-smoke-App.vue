@@ -11,6 +11,7 @@ import {
 } from '@schedule-x/calendar'
 import '@schedule-x/theme-default/dist/index.css'
 import 'temporal-polyfill/global'
+import { Temporal } from 'temporal-polyfill'
 
 const calendarApp = createCalendar({
   selectedDate: Temporal.PlainDate.from('2023-12-18'),

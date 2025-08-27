@@ -16,6 +16,8 @@ import { CustomComponents } from '../../src/types/custom-components.ts'
 // import CustomTimeGridEvent from './components/CustomTimeGridEvent.vue'
 import CustomDateGridEvent from '../components/CustomDateGridEvent.vue'
 import CustomEventModal from '../components/CustomEventModal.vue'
+import 'temporal-polyfill/global'
+import { Temporal } from 'temporal-polyfill'
 
 const counter = ref(0)
 

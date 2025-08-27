@@ -13,6 +13,7 @@ import '@schedule-x/theme-default/dist/index.css'
 import CustomDateGridEvent from '../../../development/components/CustomDateGridEvent.vue'
 import CustomTimeGridEvent from '../../../development/components/CustomTimeGridEvent.vue'
 import 'temporal-polyfill/global'
+import { Temporal } from 'temporal-polyfill'
 
 const calendarApp = createCalendar({
   views: [viewWeek, viewDay, viewMonthAgenda, viewMonthGrid],
