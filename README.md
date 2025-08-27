@@ -49,23 +49,3 @@ const calendarApp = createCalendar({
   </div>
 </template>
 ```
-
-### Date picker
-
-```vue
-<script setup lang="ts">
-import { SxDatePicker } from '@schedule-x/vue'
-import '@schedule-x/theme-default/dist/date-picker.css'
-import { ref } from 'vue'
-
-const datePickerModel = ref<string>('2024-07-12')
-</script>
-
-<template>
-  <div>
-    <p id="date-picker-model">{{ datePickerModel }}</p>
-
-    <SxDatePicker ref="datePickerRef" v-model="datePickerModel" />
-  </div>
-</template>
-```
