@@ -28,7 +28,20 @@ const incrementCounter = () => {
 const calendarApp = shallowRef(
   createCalendar({
     views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
-    events: seededEvents,
+    events: [
+      {
+        id: 1,
+        title: 'Event 1',
+        start: Temporal.ZonedDateTime.from('2023-12-19T00:00:00+01:00[Europe/Stockholm]'),
+        end: Temporal.ZonedDateTime.from('2023-12-19T01:00:00+01:00[Europe/Stockholm]'),
+      },
+      {
+        id: 2,
+        title: 'Event 2',
+        start: Temporal.ZonedDateTime.from('2023-12-25T00:00:00+01:00[Europe/Stockholm]'),
+        end: Temporal.ZonedDateTime.from('2023-12-25T01:00:00+01:00[Europe/Stockholm]'),
+      },
+    ],
     selectedDate: Temporal.PlainDate.from('2023-12-19'),
     plugins: [createEventModalPlugin(), createDragAndDropPlugin()],
     timezone: 'Europe/Stockholm',
@@ -46,7 +59,7 @@ const addEvent = () => {
 }
 
 const customComponents: CustomComponents = {
-  // timeGridEvent: CustomTimeGridEvent,
+  //timeGridEvent: CustomTimeGridEvent,
   dateGridEvent: CustomDateGridEvent,
   eventModal: CustomEventModal,
 }
@@ -58,9 +71,9 @@ const customComponents: CustomComponents = {
   <div class="app">
     <Calendar
       :calendar-app="calendarApp"
-      :custom-components="customComponents"
+      
     >
-      <!-- <template #timeGridEvent="{ calendarEvent }">
+      <template #timeGridEvent="{ calendarEvent }">
         <div
           :style="{ backgroundColor: 'green', color: '#fff', height: '100%' }"
         >
@@ -70,7 +83,7 @@ const customComponents: CustomComponents = {
 
           <div>{{ counter }}</div>
         </div>
-      </template> -->
+      </template>
 
       <!--      <template #headerContent> My custom header </template>-->
       <!--      <template #headerContentLeftPrepend>-->
@@ -91,7 +104,7 @@ const customComponents: CustomComponents = {
       <!--        </div>-->
       <!--      </template>-->
 
-      <template #monthAgendaEvent="{ calendarEvent }">
+      <!-- <template #monthAgendaEvent="{ calendarEvent }">
         <div
           :style="{
             backgroundColor: 'cornflowerblue',
@@ -103,9 +116,9 @@ const customComponents: CustomComponents = {
           <div>{{ calendarEvent.title }}</div>
           <div>Counter: {{ counter }}</div>
         </div>
-      </template>
+      </template> -->
 
-      <template #monthGridEvent="{ calendarEvent, hasStartDate }">
+      <!-- <template #monthGridEvent="{ calendarEvent, hasStartDate }">
         <div
           :style="{
             backgroundColor: 'green',
@@ -119,7 +132,7 @@ const customComponents: CustomComponents = {
           &#8226;
           <span>{{ counter }}</span>
         </div>
-      </template>
+      </template> -->
     </Calendar>
 
     <button @click="addEvent">add event</button>

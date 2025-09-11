@@ -43,13 +43,19 @@ export default defineComponent({
       )
     }
 
+    this.calendarApp._setDestroyCustomComponentInstance((ccid: string) => {
+      this.customComponentsMeta = this.customComponentsMeta.filter(
+        (component) => component.wrapperElement.dataset.ccid !== ccid
+      )
+    })
+
     const allCustomVNodes = {
       ...this.customComponents,
       ...this.$slots,
     }
 
     for (const [componentName, component] of Object.entries(allCustomVNodes)) {
-      if (!component) continue
+      if (!component || componentName === 'default') continue
 
       this.calendarApp._setCustomComponentFn(
         componentName,
