@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.1.1](https://github.com/schedule-x/vue/compare/v3.1.0...v3.1.1) (2025-09-11)
+
+
+### Bug Fixes
+
+* release detached dom nodes ([#194](https://github.com/schedule-x/vue/issues/194)) ([c7f212c](https://github.com/schedule-x/vue/commit/c7f212cfb3e6a81991e088f76624a581b19c9a26))
+
 # [3.1.0](https://github.com/schedule-x/vue/compare/v3.0.0...v3.1.0) (2025-09-02)
 
 
