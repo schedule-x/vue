@@ -46,7 +46,7 @@ const addEvent = () => {
 }
 
 const customComponents: CustomComponents = {
-  // timeGridEvent: CustomTimeGridEvent,
+  //timeGridEvent: CustomTimeGridEvent,
   dateGridEvent: CustomDateGridEvent,
   eventModal: CustomEventModal,
 }
@@ -60,7 +60,7 @@ const customComponents: CustomComponents = {
       :calendar-app="calendarApp"
       :custom-components="customComponents"
     >
-      <!-- <template #timeGridEvent="{ calendarEvent }">
+      <template #timeGridEvent="{ calendarEvent }">
         <div
           :style="{ backgroundColor: 'green', color: '#fff', height: '100%' }"
         >
@@ -70,7 +70,7 @@ const customComponents: CustomComponents = {
 
           <div>{{ counter }}</div>
         </div>
-      </template> -->
+      </template>
 
       <!--      <template #headerContent> My custom header </template>-->
       <!--      <template #headerContentLeftPrepend>-->
@@ -91,7 +91,7 @@ const customComponents: CustomComponents = {
       <!--        </div>-->
       <!--      </template>-->
 
-      <template #monthAgendaEvent="{ calendarEvent }">
+      <!-- <template #monthAgendaEvent="{ calendarEvent }">
         <div
           :style="{
             backgroundColor: 'cornflowerblue',
@@ -103,9 +103,9 @@ const customComponents: CustomComponents = {
           <div>{{ calendarEvent.title }}</div>
           <div>Counter: {{ counter }}</div>
         </div>
-      </template>
+      </template> -->
 
-      <template #monthGridEvent="{ calendarEvent, hasStartDate }">
+      <!-- <template #monthGridEvent="{ calendarEvent, hasStartDate }">
         <div
           :style="{
             backgroundColor: 'green',
@@ -119,7 +119,7 @@ const customComponents: CustomComponents = {
           &#8226;
           <span>{{ counter }}</span>
         </div>
-      </template>
+      </template> -->
     </Calendar>
 
     <button @click="addEvent">add event</button>
