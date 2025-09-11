@@ -28,20 +28,7 @@ const incrementCounter = () => {
 const calendarApp = shallowRef(
   createCalendar({
     views: [viewWeek, viewMonthGrid, viewDay, viewMonthAgenda],
-    events: [
-      {
-        id: 1,
-        title: 'Event 1',
-        start: Temporal.ZonedDateTime.from('2023-12-19T00:00:00+01:00[Europe/Stockholm]'),
-        end: Temporal.ZonedDateTime.from('2023-12-19T01:00:00+01:00[Europe/Stockholm]'),
-      },
-      {
-        id: 2,
-        title: 'Event 2',
-        start: Temporal.ZonedDateTime.from('2023-12-25T00:00:00+01:00[Europe/Stockholm]'),
-        end: Temporal.ZonedDateTime.from('2023-12-25T01:00:00+01:00[Europe/Stockholm]'),
-      },
-    ],
+    events: seededEvents,
     selectedDate: Temporal.PlainDate.from('2023-12-19'),
     plugins: [createEventModalPlugin(), createDragAndDropPlugin()],
     timezone: 'Europe/Stockholm',
@@ -71,7 +58,7 @@ const customComponents: CustomComponents = {
   <div class="app">
     <Calendar
       :calendar-app="calendarApp"
-      
+      :custom-components="customComponents"
     >
       <template #timeGridEvent="{ calendarEvent }">
         <div
