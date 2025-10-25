@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/schedule-x/vue/compare/v3.2.0...v3.3.0) (2025-10-25)
+
+
+### Features
+
+* v3-3-0 ([2b66c80](https://github.com/schedule-x/vue/commit/2b66c80c7e208c2ce15829e5fc54953395a37d46))
+
 # [3.2.0](https://github.com/schedule-x/vue/compare/v3.1.1...v3.2.0) (2025-10-04)
 
 
