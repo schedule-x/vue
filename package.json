@@ -52,7 +52,7 @@
     "semantic-release": "^24.0.0",
     "temporal-polyfill": "^0.3.0",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8",
+    "vite": "^7.0.0",
     "vue-tsc": "^3.0.0"
   }
 }
