@@ -4,9 +4,11 @@ import {
   h,
   isReactive,
   PropType,
-  Teleport,
+  SlotsType,
+  Teleport
 } from 'vue'
-import { CalendarApp } from '@schedule-x/calendar'
+import { CalendarApp, CalendarEventExternal } from '@schedule-x/calendar'
+import type {CalendarAppSingleton} from '@schedule-x/shared';
 import type {
   CustomComponentMeta,
   CustomComponents,
@@ -28,6 +30,25 @@ export default defineComponent({
       default: () => ({}),
     },
   },
+
+  slots: Object as SlotsType<{
+    timeGridEvent: { calendarEvent: CalendarEventExternal },
+    dateGridEvent: { calendarEvent: CalendarEventExternal },
+    weekGridDate: { date: string },
+    weekGridHour: { hour: number, gridStep: { hour: number, minute: number } },
+    monthGridEvent: { calendarEvent: CalendarEventExternal, hasStartDate: boolean },
+    monthGridDayName: { /** 0-6, like in JS-dates */ day: number },
+    monthGridDate: { /** Day-of-the-month */ date: number, jsDate: Date },
+    monthAgendaEvent: { calendarEvent: CalendarEventExternal },
+    eventModal: { calendarEvent: CalendarEventExternal },
+    headerContentLeftPrepend: { $app: CalendarAppSingleton },
+    headerContentLeftAppend: { $app: CalendarAppSingleton },
+    headerContentRightPrepend: { $app: CalendarAppSingleton },
+    headerContentRightAppend: { $app: CalendarAppSingleton },
+    headerContent: { $app: CalendarAppSingleton },
+    sidebarAddEventButton: { onClick: unknown },
+    resourceEvent: { calendarEvent: CalendarEventExternal, resource: unknown }
+  }>,
 
   data() {
     return {
