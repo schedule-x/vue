@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.6.0](https://github.com/schedule-x/vue/compare/v3.5.0...v3.6.0) (2026-01-11)
+
+
+### Features
+
+* add missing types for slots ([#203](https://github.com/schedule-x/vue/issues/203)) ([39f4144](https://github.com/schedule-x/vue/commit/39f41441aa00eabde26dfbded3d95684d2b2bd65))
+
 # [3.5.0](https://github.com/schedule-x/vue/compare/v3.4.0...v3.5.0) (2025-12-09)
 
 
