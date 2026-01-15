@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.0.0](https://github.com/schedule-x/vue/compare/v3.6.0...v4.0.0) (2026-01-15)
+
+
+### Features
+
+* **deps:** update schedule-x monorepo packages to v4 ([#204](https://github.com/schedule-x/vue/issues/204)) ([3dd9fcb](https://github.com/schedule-x/vue/commit/3dd9fcb8d3d335f3b24b5b64358b7b19f12db183))
+
+
+### BREAKING CHANGES
+
+* **deps:** update dep @schedule-x/calendar to v4
+
 # [3.6.0](https://github.com/schedule-x/vue/compare/v3.5.0...v3.6.0) (2026-01-11)
 
 
