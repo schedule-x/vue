@@ -23,7 +23,7 @@
   },
   "peerDependencies": {
     "@schedule-x/calendar": "^3.4.0 || ^4.0.0",
-    "@schedule-x/date-picker": "4.2.0",
+    "@schedule-x/date-picker": "4.8.0",
     "vue": "^3"
   },
   "devDependencies": {
@@ -33,10 +33,10 @@
     "@schedule-x/drag-and-drop": "3.7.3",
     "@schedule-x/e2e-testing": "^4.0.0",
     "@schedule-x/eslint-config": "^2.18.0",
-    "@schedule-x/event-modal": "4.2.0",
+    "@schedule-x/event-modal": "4.8.0",
     "@schedule-x/prettier-config": "^4.0.0",
-    "@schedule-x/shared": "4.2.0",
-    "@schedule-x/theme-default": "4.2.0",
+    "@schedule-x/shared": "4.8.0",
+    "@schedule-x/theme-default": "4.8.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
